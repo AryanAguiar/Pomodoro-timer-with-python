@@ -2,10 +2,13 @@ import tkinter as tk
 from tkinter import messagebox
 import pygame
 
+# Initialize the pygame mixer for sound playback
 pygame.mixer.init()
+
 
 class Pomodoro:
     def __init__(self, root):
+        # Initialize the Pomodoro timer with the main window root
         self.root = root
         self.timer_running = False
         self.work = 25 * 60
