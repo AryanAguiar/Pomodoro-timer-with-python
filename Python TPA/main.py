@@ -81,6 +81,7 @@ class Pomodoro:
         minutes, seconds = divmod(self.current_time, 60)
         self.time_var.set(f"{minutes:02d}:{seconds:02d}")
 
+    #Function to play audio at the end of the timer
     def play_sound(self):
         pygame.mixer.music.load("soundtest.mp3")
         pygame.mixer.music.play(loops=0)
